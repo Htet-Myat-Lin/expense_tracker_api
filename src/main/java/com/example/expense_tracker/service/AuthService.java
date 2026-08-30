@@ -68,7 +68,7 @@ public class AuthService {
                 .path("/")
                 .httpOnly(true)
                 .secure(true)
-                .sameSite("Lax")
+                .sameSite("None")
                 .maxAge(expiration)
                 .build();
         res.addHeader(HttpHeaders.SET_COOKIE, cookie.toString());
